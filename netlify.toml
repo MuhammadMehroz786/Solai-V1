@@ -1,0 +1,12 @@
+[build]
+  base = "heygen-ai-app"
+  publish = "heygen-ai-app/build"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
